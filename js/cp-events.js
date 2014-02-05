@@ -27,6 +27,7 @@
 
             // [http://en.wikipedia.org/wiki/Data_URI_scheme]
             $('#data-zone').text(e.target.result);
+            $('#cp-canvas').removeClass('cp-canvas-drag-over');
 
         };
     }
@@ -42,23 +43,24 @@
         return false;
     }
 
-    function file_drag_enter( e ) {
-    }
+    function file_drag_enter( e ) {}
 
     function file_drag_over( e ) {
         e.stopPropagation();
         e.preventDefault();
         e.dataTransfer.dropEffect="copy";
+        $('#cp-canvas').addClass('cp-canvas-drag-over');
     }
 
     function file_drag_leave( e ) {
         e.stopPropagation();
         e.preventDefault();
         e.dataTransfer.dropEffect="copy";
-        $(canvas).removeClass('cp-canvas-drag-over');
+        $('#cp-canvas').removeClass('cp-canvas-drag-over');
     }
 
     function file_drag_end  ( e ) {
+        $('#cp-canvas').removeClass('cp-canvas-drag-over');
     }
 
     $(window).load( function() {
