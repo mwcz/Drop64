@@ -44,6 +44,7 @@ img.logo {
 
 #cp-canvas { 
     margin-top: 10px;
+    height: 20em;
 }
 .slide {
     -webkit-transition: all 0.33s ease-in, background-color 0s ease;
