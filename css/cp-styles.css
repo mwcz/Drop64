@@ -1,6 +1,14 @@
+@font-face {
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/orbitron-bold-webfont.woff") format("woff"),
+         url("../fonts/orbitron-bold-webfont.svg") format("truetype"),
+         url("../fonts/orbitron-bold-webfont.ttf") format("svg");
+}
 body { font-family: Verdana, sans-serif; color: #fff; background-color: #000; }
 h1 {
-    font-family : 'Titan One';
+    font-family : 'Orbitron';
     font-weight : 400;
 }
 a { color: #ddd; }
@@ -35,7 +43,7 @@ img.logo {
  *****************/
 
 #cp-canvas { 
-	margin-top: 10px;
+    margin-top: 10px;
 }
 .slide {
     -webkit-transition: all 0.33s ease-in, background-color 0s ease;
@@ -167,7 +175,7 @@ img.logo {
  ****************************************/
 #cp-toolbox,
 #cp-output {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 #cp-output {
     padding: 0;
@@ -191,4 +199,13 @@ img.logo {
        -moz-transition : all 0.33s ease;
          -o-transition : all 0.33s ease;
             transition : all 0.33s ease;
+}
+
+#data-zone {
+    color: #fff;
+    background: #1f1f1f;
+    border: none;
+    outline: none;
+    height: 20em;
+    margin-top: 20px;
 }

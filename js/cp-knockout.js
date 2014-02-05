@@ -100,13 +100,6 @@ var ColorPal_farb, ColorPal_pick, ColorPal_selected, ColorPal_ViewModel;
             };
         }
 
-        ColorPal_farb = $.farbtastic('#cp-picker');
-        ColorPal_farb.linkTo(function( hex ) {
-            if( ColorPal_selected ) {
-                var swatch_id = $(ColorPal_selected).attr('id').slice(-1);
-                ColorPal_ViewModel.colors()[ swatch_id ].hex( hex );
-            }
-        });
         ColorPal_pick = $('#cp-picker');
         $('.cp-swatch').click(function() {
             if (ColorPal_selected) {
